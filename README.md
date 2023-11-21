@@ -1,5 +1,12 @@
 # Operator:LOGADDEXP
-# 1. Op Semantics
+
+
+# 1.Revision History 
+| Version   | Description| Time      | owner| 
+| :-------- | :-------   | :---------| :-----|
+
+
+# 2. Op Semantics
 This article mainly explains the operator implementation of Logaddexp.
 It calculates the logarithm of the sum of exponentiations of the inputs.
 .
@@ -25,7 +32,7 @@ Example
 ```
 
 
-# 2. Feature Specification
+# 3. Feature Specification
 
 The implementation characteristics of this operator are described as follows:-
 
@@ -37,7 +44,7 @@ The implementation characteristics of this operator are described as follows:-
 
 
 
-# 3. Design
+# 4. Design
 ![Screenshot](https://github.com/allen1245456/external_documentation/blob/main/Screenshot%202023-11-21%20142309.png)
 
 #### Loading Vectors from CPU to Device Memory:
@@ -105,12 +112,12 @@ L3 to L1 memcpy
 It copies data from a global memory span (global_vrhs) to a private memory span (local_vrhs) and  global memory span (global_vlhs) to a private memory span (local_vlhs).
 
 
-## 4. Pytorch Reference
+## 5. Pytorch Reference
 
 [Pytorch Reference](https://pytorch.org/docs/stable/generated/torch.logaddexp.html)
 
 
-## 5. Test
+## 6. Test
 | Serial Number | Test Content     | Test Result                |
 | :-------- | :------- | :------------------------- |
 | `1` | `Data Type FP32` | -------- |
