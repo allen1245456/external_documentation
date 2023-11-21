@@ -18,7 +18,7 @@ logaddexp(float dst, float lhs, float* rhs, unsigned int size);
 
 Example
 ```bash
-    lhs ->⁡[-100.0, -200, -300]
+        lhs ->⁡[-100.0, -200, -300]
 	rhs ->  [-1.0, -2, -3]
 	dst -> [-1., -2., -3.]
 	size -> 3
@@ -82,6 +82,14 @@ Host to HBM memcpy
     TOPS_CHECK(topsMemset(dev_out, 0xff, data_size));
 
 ```
+topsMemcpy->
+The code is copying data from the host to the device for dev_vlhs and dev_vrhs arrays.
+
+topsMemset:->
+It is setting the values in the dev_out array to 0xff.
+
+TOPS_CHECK:->
+It checks the return value of the topsMemcpy and topsMemset and raises an error or takes appropriate action if the copy fails.
 
 L3 to L1 memcpy
 
@@ -94,7 +102,7 @@ L3 to L1 memcpy
                tops::mdspan(tops::Global, global_vrhs, num));
 ```
 
-
+It copies data from a global memory span (global_vrhs) to a private memory span (local_vrhs) and  global memory span (global_vlhs) to a private memory span (local_vlhs).
 
 
 ## 4. Pytorch Reference
