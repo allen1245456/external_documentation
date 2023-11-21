@@ -1,12 +1,12 @@
 # Operator:LOGADDEXP
 
 
-# 1.Revision History 
+## 1.Revision History 
 | Version   | Description| Time      | owner| 
 | :-------- | :-------   | :---------| :-----|
 
 
-# 2. Op Semantics
+## 2. Op Semantics
 This article mainly explains the operator implementation of Logaddexp.
 It calculates the logarithm of the sum of exponentiations of the inputs.
 .
@@ -32,7 +32,7 @@ Example
 ```
 
 
-# 3. Feature Specification
+## 3. Feature Specification
 
 The implementation characteristics of this operator are described as follows:-
 
@@ -44,7 +44,7 @@ The implementation characteristics of this operator are described as follows:-
 
 
 
-# 4. Design
+## 4. Design
 ![Screenshot](https://github.com/allen1245456/external_documentation/blob/main/Screenshot%202023-11-21%20142309.png)
 
 #### Loading Vectors from CPU to Device Memory:
